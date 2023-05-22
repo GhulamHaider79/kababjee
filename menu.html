@@ -5,23 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Of KababJee</title>
+    <style>
+        *{
+            padding: 0;
+            text-decoration: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: montserrat;
+        }
+        nav{
+            background: #0082e6;
+            height: 80px;
+            width: 100%;
+        }
+        label.logo{
+            color: #fff;
+            font-size: 35px;
+            padding: 0 100px;
+            line-height: 80px;
+            font-weight: bold ;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: #fff;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+            table{
+                border: 2px;
+            }
+        
+    </style>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body bgcolor="#04f7278">
-    <img src="./paya2.jpg" alt="Lahori Pyaya" width="1100" height="400">
     <div>
-        <table border="1px" align="center" style="margin-top: 10px;">
-           <center> <h1 >MENU</h1></center>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check"><i class="fas fa-bars"></i></label>
+            <label for="" class="logo">KababJee</label>
+            <ul>
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <img src="./paya2.jpg" alt="Lahori Pyaya" width="1100" height="400">
+    
+        <table border="2px">
+            <h1 >MENU</h1>
             <th scope="col">Veriety of dishes</th>
             <th scope="col">PRICE</th> 
             <th scope="col">Special Offers</th>
             
             <tr>
                 <td>spicy mixican wings</td> 
-            <td colspan="2"> Rs,999</td>
+            <td rowspan="2"> Rs,999</td>
         <td></td></tr>
         <tr>
             <td>Honey Mustard wings</td>
-            <td colspan="2">Rs,999</td>
+            <td colspan="2"></td>
             <td></td>
         </tr>
         <tr>
@@ -36,6 +94,6 @@
         </tr>
 
         </table>
-    </div>
+    
 </body>
 </html>
